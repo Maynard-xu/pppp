@@ -661,15 +661,18 @@ function init() {
 
     // table
 
-    for (let i = 0; i < 59; i++) {
+    for (let i = 0; i < 109; i++) {
+        if (i == 13) {
+            continue;
+        }
         const element = document.createElement("img");
         element.className = "element";
         // element.style.backgroundColor =
         //     "rgba(255,255,255," + (Math.random() * 0.5 + 0.25) + ")";
         element.style.backgroundColor =
             "rgba(255,255,255)";
-        // element.src = 'images/m-' + (i + 1) + '.png'
-        element.src = 'lbh/IMG_' + (i + 1) + '.png'
+        element.src = 'images/m-' + (i + 1) + '.png'
+        // element.src = 'images/IMG_' + (i + 1) + '.png'
 
         // const img = document.createElement('img');
         // img.src = table[i];
